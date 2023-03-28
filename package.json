@@ -1,0 +1,33 @@
+{
+  "name": "@next-mdx-content/root",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev --parallel",
+    "format": "prettier --write . --ignore-path .gitignore",
+    "lint": "turbo lint && manypkg check",
+    "type-check": "turbo type-check"
+  },
+  "dependencies": {
+    "@changesets/changelog-github": "^0.4.8",
+    "@changesets/cli": "^2.26.1",
+    "@ianvs/prettier-plugin-sort-imports": "^3.7.2",
+    "@manypkg/cli": "^0.19.2",
+    "@next-mdx-content/eslint-config": "workspace:^",
+    "@types/node": "^18.11.18",
+    "@types/prettier": "^2.7.2",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "eslint": "^8.36.0",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.5",
+    "turbo": "^1.8.6",
+    "typescript": "^5.0.2"
+  },
+  "packageManager": "pnpm@8.0.0",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
